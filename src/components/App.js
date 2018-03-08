@@ -1,6 +1,11 @@
 import React from 'react';
 import Main from './landing/Main';
-
+import About from './landing/About';
+const Showcase = () => (
+  <section id="showcase" className="bg-danger">
+    showcase section
+  </section>
+);
 export default () => {
   return (
     <div>
@@ -10,6 +15,8 @@ export default () => {
         </a>
       </nav>
       <Main />
+      <Showcase />
+      <About />
     </div>
   );
 };
