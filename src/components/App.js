@@ -11,7 +11,7 @@ export default () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar light bg-dark">
         <a href="#" className="narbar-brand">
-          Navbar
+          Navbars
         </a>
       </nav>
       <Main />
