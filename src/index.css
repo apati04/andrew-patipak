@@ -9,3 +9,7 @@ section {
   height: 100vh;
   padding: 50px;
 }
+
+img:hover {
+  opacity: 0.5;
+}
