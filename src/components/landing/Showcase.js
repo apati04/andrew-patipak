@@ -7,7 +7,9 @@ export default class Showcase extends Component {
   renderProjects(items) {
     return (
       <div className="row d-flex justify-content-around m-2">
-        {items.map((objProps) => <ProjectCard {...objProps} />)}
+        <div className="card-deck">
+          {items.map((objProps) => <ProjectCard {...objProps} />)}
+        </div>
       </div>
     );
   }

@@ -8,8 +8,20 @@ import { unregister } from './registerServiceWorker';
 import fontawesome from '@fortawesome/fontawesome';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import brands from '@fortawesome/fontawesome-free-brands';
-import { faCheckSquare, faCoffee, faAngleDoubleDown } from '@fortawesome/fontawesome-free-solid';
+import {
+  faCheckSquare,
+  faCoffee,
+  faAngleDoubleDown,
+  faCode,
+  faExternalLinkAlt
+} from '@fortawesome/fontawesome-free-solid';
 
-fontawesome.library.add(brands, faCheckSquare, faCoffee);
+fontawesome.library.add(
+  brands,
+  faCheckSquare,
+  faCoffee,
+  faCode,
+  faExternalLinkAlt
+);
 ReactDOM.render(<App />, document.getElementById('root'));
 unregister();
