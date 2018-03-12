@@ -1,15 +1,16 @@
 import React from 'react';
 
-export default ({ title, description, photo }) => {
+export default ({ title, description, photo, website, repo }) => {
   return (
-    <div className="card">
-      <img src={photo} alt="" className="card-img-top" />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-      </div>
+    <div
+      style={{ width: '50%' }}
+      className="d-flex justify-content-between card bg-info"
+    >
+      <div className="font-weight-bold text-center card-header">{title}</div>
+      <img src={photo} alt="" className="card-img img-fluid" />
       <div className="card-footer">
-        <small>link</small>
+        <a href={repo}>Repository</a>
+        <a href={website}>Website</a>
       </div>
     </div>
   );

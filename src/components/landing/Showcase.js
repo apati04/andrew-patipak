@@ -1,21 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import ProjectCard from '../ProjectCard';
-const PROJECTS = [
-  { 
-    title: "Learn JS",
-    description: "Educate yourself on Javascript with this simple app. Made with React",
-    photo: '/img/learnjs.jpg'
-  }
-]
+import ProjectData from '../../api/projects';
+import ProjectData2 from '../../api/projects2';
+
 export default class Showcase extends Component {
-  renderProjects() {
-    return PROJECTS.map(objProps => <ProjectCard {...objProps}/>);
+  renderProjects(items) {
+    return (
+      <div className="row d-flex justify-content-around m-2">
+        {items.map((objProps) => <ProjectCard {...objProps} />)}
+      </div>
+    );
   }
   render() {
     return (
-      <section id="showcase" className="container-fluid">
-      {this.renderProjects()}
-      </section>
-    )
+      <div>
+        <section id="showcase">
+          <div className="container-fluid d-flex flex-column">
+            <h3>Projects I've Worked On</h3>
+            {this.renderProjects(ProjectData)}
+            {this.renderProjects(ProjectData2)}
+          </div>
+        </section>
+      </div>
+    );
   }
 }

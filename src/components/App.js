@@ -11,7 +11,6 @@ export default () => {
         </a>
       </nav>
       <Main />
-
       <Showcase />
       <About />
     </div>
