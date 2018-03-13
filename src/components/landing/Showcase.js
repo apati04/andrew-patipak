@@ -6,10 +6,8 @@ import ProjectData2 from '../../api/projects2';
 export default class Showcase extends Component {
   renderProjects(items) {
     return (
-      <div className="row d-flex justify-content-center">
-        <div className="card-group">
-          {items.map((objProps) => <ProjectCard {...objProps} />)}
-        </div>
+      <div className="card-deck">
+        {items.map((objProps) => <ProjectCard {...objProps} />)}
       </div>
     );
   }
@@ -24,9 +22,11 @@ export default class Showcase extends Component {
             >
               Portfolio
             </h1>
-            <div className="border-bottom mb-3 mt-3" />
-            {this.renderProjects(ProjectData)}
-            {this.renderProjects(ProjectData2)}
+            <div className="container">
+              <div className="border-bottom mb-1 mt-1" />
+              {this.renderProjects(ProjectData)}
+              {this.renderProjects(ProjectData2)}
+            </div>
           </div>
         </section>
       </div>

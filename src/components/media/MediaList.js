@@ -15,5 +15,5 @@ export default () => {
       return <MediaListItem {...el} />;
     });
   };
-  return <ul className="list-inline mb-0">{listItems(MEDIAICONS)}</ul>;
+  return <ul className="mb-0">{listItems(MEDIAICONS)}</ul>;
 };

@@ -6,78 +6,25 @@ const style = {
   footerStyle: {
     paddingTop: '5rem',
     paddingBottom: '5rem',
-    backgroundColor: '#2c3e50',
-    color: '#fff'
+    backgroundColor: '#2c3e50'
   }
 };
 export default class Footer extends Component {
   render() {
     return (
-      <footer style={style.footerStyle} className="footer text-center">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4 mb-5 mb-lg-0">
-              <h4 className="text-uppercase mb-4">Location</h4>
-              <p className="lead mb-0" />
-            </div>
-            {/* <div className="col-md-4 mb-5 mb-lg-0">
-              <h4 className="text-uppercase mb-4">Around the Web</h4>
-              <ul className="list-inline mb-0">
-                <li className="list-inline-item">
-                  <a
-                    className="btn btn-outline-light btn-social text-center rounded-circle"
-                    href="#"
-                  >
-                    <i className="fa fa-fw fa-facebook" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    className="btn btn-outline-light btn-social text-center rounded-circle"
-                    href="#"
-                  >
-                    <i className="fa fa-fw fa-google-plus" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    target="_blank"
-                    style={{ fontSize: '3rem' }}
-                    className="p-0 m-0 text-center text-white"
-                    href="https://www.github.com/apati04"
-                  >
-                    <FontAwesomeIcon icon={[ 'fab', 'github' ]} />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    className="btn btn-outline-light btn-social text-center rounded-circle"
-                    href="#"
-                  >
-                    <i className="fa fa-fw fa-linkedin" />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a
-                    className="btn btn-outline-light btn-social text-center rounded-circle"
-                    href="#"
-                  >
-                    <i className="fa fa-fw fa-dribbble" />
-                  </a>
-                </li>
-              </ul>
-            </div> */}
-            <Media />
-            <div className="col-md-4">
-              <h4 className="text-uppercase mb-4">more</h4>
-              <p className="lead mb-0">
-                extra
-                <a href="http://startbootstrap.com">info</a>.
-              </p>
+      <div>
+        <footer style={style.footerStyle}>
+          <div className="container-fluid d-flex flex-column align-items-center text-center text-white">
+            <div>
+              <a className="text-white" href="mailto:andrewpatipak@gmail.com">
+                <h4 className="text-uppercase">Available for hire</h4>
+                <h4 className="text-uppercase">Contact Me</h4>
+              </a>
+              <p className="lead mb-0">andrew.patipak@gmail.com</p>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     );
   }
 }

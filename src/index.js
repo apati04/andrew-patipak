@@ -13,7 +13,8 @@ import {
   faCoffee,
   faAngleDoubleDown,
   faCode,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faFilePdf
 } from '@fortawesome/fontawesome-free-solid';
 
 fontawesome.library.add(
@@ -21,7 +22,8 @@ fontawesome.library.add(
   faCheckSquare,
   faCoffee,
   faCode,
-  faExternalLinkAlt
+  faExternalLinkAlt,
+  faFilePdf
 );
 ReactDOM.render(<App />, document.getElementById('root'));
 unregister();
